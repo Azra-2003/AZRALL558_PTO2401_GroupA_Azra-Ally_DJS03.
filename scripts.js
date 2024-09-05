@@ -1,10 +1,8 @@
 import { books, authors, genres, BOOKS_PER_PAGE } from './data.js';
-
-// State management
 let page = 1;
 let matches = books;
 
-// Utility function to create for book preview 
+// Utility function 
 function createBookPreview({ author, id, image, title }) {
     const element = document.createElement('button');
     element.classList.add('preview');
